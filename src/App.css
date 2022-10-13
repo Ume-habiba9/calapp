@@ -4,27 +4,132 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
+
 .result {
   border: 2px solid black;
   height: 30vh;
   width: 100vw;
 }
-.buttons button{
-  background-color: rgb(177, 170, 170);
-  width: 339px;
-  font-size: 1.6rem;
+
+.btn {
+  border: 2px solid black;
   height: 81px;
+  position: relative;
+  background-color: rgb(212, 205, 205);
+  font-size: 1.6rem;
+  color: black;
+  padding: 20px;
+  width: 339px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
-.row5 button{
-  width: 679px;
+
+.btn:after {
+  content: "";
+  background: #525752;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
 }
-.buttons input{
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.buttons input {
   font-size: 1.7rem;
 }
 
+.right {
+  background-color: rgba(192, 151, 37, 0.925);
+  border: 2px solid black;
+  height: 81px;
+  position: relative;
+  font-size: 1.6rem;
+  color: black;
+  padding: 20px;
+  width: 339px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 
+}
+
+.right:after {
+  content: "";
+  background: #525752;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#zero {
+  width: 510px;
+}
+
+.right:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+#equal {
+  position: relative;
+  background-color: rgb(212, 205, 205);
+  border: 2px solid black;
+  font-size: 28px;
+  color: black;
+  padding: 20px;
+  width: 510px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#equal:after {
+  content: "";
+  background: #525752;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#equal:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
